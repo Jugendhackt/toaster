@@ -5,7 +5,7 @@ import { Time } from '@angular/common';
 @Injectable({
   providedIn: 'root'
 })
-export class ToasterServiceService {
+export class ToasterService {
 
   constructor() { }
   tan: number = 0;

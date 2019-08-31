@@ -8,6 +8,7 @@ import { AlarmComponent } from './cards/alarm/alarm.component';
 import { HomeComponent } from './tabs/home/home.component';
 import { ManualControlComponent } from './tabs/manual-control/manual-control.component';
 import { ToastNowComponent } from './cards/toast-now/toast-now.component';
+import { SettingsComponent } from './tabs/settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ToastNowComponent } from './cards/toast-now/toast-now.component';
     AlarmComponent,
     HomeComponent,
     ManualControlComponent,
-    ToastNowComponent
+    ToastNowComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
