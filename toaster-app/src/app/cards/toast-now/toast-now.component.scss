@@ -1,0 +1,15 @@
+@import '../cards.scss';
+
+#toast-now-card {
+    .card-content {
+        #toast-now-btn {
+            width: 100%;
+            text-align: center;
+            border: none;
+            padding: 14px;
+            color: white;
+            background: #3c3cbb;
+            border-radius: 7px;
+        }
+    }
+}

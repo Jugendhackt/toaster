@@ -1,1 +1,13 @@
-<router-outlet></router-outlet>
+<div id='main-wrapper'>
+    <div id='router-outlet-wrapper'>
+        <router-outlet></router-outlet>
+    </div>
+    <div id='tab-bar-wrapper'>
+        <div id='tab-bar'>
+            <div class='tab-bar-item' *ngFor='let tab of tabs' (click)='navigate(tab.path)'>
+                <i class="material-icons">{{ tab.icon }}</i>
+                <!--<a [routerLink]='tab.path'><span>{{ tab.name }}</span></a>-->
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,16 +1,8 @@
-.card {
-    border-radius: 7px;
-    padding: 10px;
-    box-shadow: 0px 0px 20px 0px #0000000f;
-    color: white;
-}
+@import '../cards.scss';
 
 #toast-tan-card {
     background: linear-gradient(45deg, #914d1d, #f0d798);
-
-    .card-title {
-        font-size: 0.8em;
-    }
+    color: white;
 
     .card-content {
         #tan-value {

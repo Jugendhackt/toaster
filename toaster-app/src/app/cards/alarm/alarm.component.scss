@@ -1,0 +1,11 @@
+@import '../cards.scss';
+
+#alarm-card {
+    .card-content {
+        input[type='time'] {
+            border: none;
+            font-family: Arial;
+            font-size: 2em;
+        }
+    }
+}

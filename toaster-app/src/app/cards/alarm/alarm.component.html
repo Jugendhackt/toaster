@@ -1,3 +1,16 @@
-<p>
-  alarm works!
-</p>
+<div class='card' id='alarm-card'>
+  <span class='card-title'>Wecker</span>
+  <div class='card-content'>
+    <input type='time' (input)='handleTimeInputChange($event)'>
+    <div id='alarm-options'>
+      <div class='alarm-option'>
+        <input type='checkbox'>
+        <span>Weckton</span>
+      </div>
+      <div class='alarm-option'>
+        <input type='checkbox'>
+        <span>Automatisches Toast</span>
+      </div>
+    </div>
+  </div>
+</div>

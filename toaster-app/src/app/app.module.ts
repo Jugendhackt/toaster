@@ -7,6 +7,7 @@ import { ToastTanComponent } from './cards/toast-tan/toast-tan.component';
 import { AlarmComponent } from './cards/alarm/alarm.component';
 import { HomeComponent } from './tabs/home/home.component';
 import { ManualControlComponent } from './tabs/manual-control/manual-control.component';
+import { ToastNowComponent } from './cards/toast-now/toast-now.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ManualControlComponent } from './tabs/manual-control/manual-control.com
     ToastTanComponent,
     AlarmComponent,
     HomeComponent,
-    ManualControlComponent
+    ManualControlComponent,
+    ToastNowComponent
   ],
   imports: [
     BrowserModule,
