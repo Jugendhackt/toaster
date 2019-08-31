@@ -2,6 +2,26 @@
 
 #toast-now-card {
     .card-content {
+        #toast-progress-bar {
+            height: 2em;
+            display: flex;
+            align-items: center;
+
+            #background {
+                background: #e3e3e3;
+                height: 5px;
+                width: 80%;
+                transition: width 0.8s ease-in-out;
+            }
+
+            #progress {
+                background: #3881ef;
+                height: 5px;
+                width: 20%;
+                transition: width 0.8s ease-in-out;
+            }
+        }
+
         #toast-now-btn {
             width: 100%;
             text-align: center;

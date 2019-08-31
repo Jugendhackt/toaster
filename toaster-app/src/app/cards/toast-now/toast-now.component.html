@@ -1,5 +1,9 @@
 <div class='card' id='toast-now-card'>
     <div class='card-content'>
-      <button id='toast-now-btn' (click)='handleToastNowClick()'>TOAST NOW</button>
+      <div *ngIf='isToasting' id='toast-progress-bar'>
+        <div id='progress' [ngStyle]='{ width: toastingProgress+"%" }'></div>
+        <div id='background' [ngStyle]='{ width: (100-toastingProgress)+"%" }'></div>
+      </div>
+      <button id='toast-now-btn' (click)='handleToastNowClick()'>{{ isToasting ? 'TOAST AUSWERFEN' : 'TOASTVORGANG STARTEN'}}</button>
     </div>
   </div>

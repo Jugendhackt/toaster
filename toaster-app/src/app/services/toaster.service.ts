@@ -10,9 +10,9 @@ export class ToasterService {
   constructor() { }
   tan: number = 0;
 
-  toastNow(): Observable<Object> {
+  toastNow(): Observable<Boolean> {
     return new Observable((subscriber) => {
-      subscriber.next({});
+      subscriber.next(true);
     })
   }
 
@@ -24,7 +24,7 @@ export class ToasterService {
 
   getToastState(): Observable<State> {
     return new Observable((subscriber) => {
-      subscriber.next({ toastInside: true, timeLeft: 42 })
+      subscriber.next({ toastInside: true, timeLeft: 42, timePassed: 22 })
     })
   }
 
@@ -58,4 +58,5 @@ interface Alarm {
 interface State {
   toastInside: Boolean;
   timeLeft: number;
+  timePassed: number;
 }
