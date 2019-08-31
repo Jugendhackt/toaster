@@ -1,3 +1,8 @@
-<p>
-  manual-control works!
-</p>
+<div id='manual-control-wrapper'>
+  <div class='channel' *ngFor='let channel of channels; let i = index'>
+    <span>{{ minChannel + i }}</span>
+    <button (click)='add(i)'>+</button>
+    <button (click)='subtract(i)'>-</button>
+    <span>{{ channels[i] }}</span>
+  </div>
+</div>

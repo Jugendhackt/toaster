@@ -20,6 +20,6 @@ export class SettingsService {
   }
 
   getSetting(name): any {
-    return window.localStorage.getItem('name');
+    return window.localStorage.getItem(name);
   }
 }
