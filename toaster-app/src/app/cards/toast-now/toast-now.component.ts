@@ -10,6 +10,8 @@ export class ToastNowComponent implements OnInit {
 
   isToasting: Boolean = false;
   toastingProgress: number = 30;
+  timeLeft: number = 0;
+  minutesLeft: number = 0;
   constructor(private toasterService: ToasterService) { }
 
   ngOnInit() {
@@ -36,6 +38,8 @@ export class ToastNowComponent implements OnInit {
     this.toasterService.getToastState().subscribe(state => {
       console.log(state);
       if(state.timeLeft && state.timePassed) {
+        this.timeLeft = state.timeLeft;
+        this.minutesLeft = Math.round(this.timeLeft / 60);
         this.toastingProgress = Math.round(state.timePassed / (state.timeLeft+state.timePassed)*100);
         if(doRecursion && this.isToasting) {
           setTimeout(() => {this.requestProgress(true)}, 5000);

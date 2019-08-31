@@ -1,3 +1,7 @@
 <h1>Einstellungen</h1>
 <span>Toaster Adresse</span><br>
-<input type='text' placeholder='z.B: 192.168.0.2:1234' (change)='handleAddressChange($event)'>
+<input type='text' [value]='toasterAddress' placeholder='z.B: 192.168.0.2:1234' (change)='handleAddressChange($event)'><br>
+<span>Min. Zeit in Sekunden</span><br>
+<input type='number' [value]='minTime' placeholder="z.B. 5 Sekunden" (change)='handleMinTimeChange($event)'><br>
+<span>Max. Zeit in Sekunden</span><br>
+<input type='number' [value]='maxTime' placeholder="z.B. 145 Sekunden" (change)='handleMaxTimeChange($event)'><br>

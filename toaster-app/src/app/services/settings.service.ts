@@ -14,4 +14,12 @@ export class SettingsService {
   getToasterAddress(): string {
     return window.localStorage.getItem('toasterAddress') || 'localhost';
   }
+
+  setSetting(name, value): void {
+    window.localStorage.setItem(name, value);
+  }
+
+  getSetting(name): any {
+    return window.localStorage.getItem('name');
+  }
 }
