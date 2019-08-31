@@ -1,0 +1,26 @@
+.card {
+    border-radius: 7px;
+    padding: 10px;
+    box-shadow: 0px 0px 20px 0px #0000000f;
+    color: white;
+}
+
+#toast-tan-card {
+    background: linear-gradient(45deg, #914d1d, #f0d798);
+
+    .card-title {
+        font-size: 0.8em;
+    }
+
+    .card-content {
+        #tan-value {
+            font-size: 1.8em;
+        } 
+
+        #tan-slider {
+            input {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+<div class='card' id='toast-tan-card'>
+  <span class='card-title'>Toast-Bräune</span>
+  <div class='card-content'>
+    <span id='tan-value'>{{ tan }} %</span>
+    <div id='tan-slider'>
+      <input #tanSlider type='range' min='0' max='100' [value]='tan' (input)='handleTanSliderChange($event)' />
+    </div>
+  </div>
+</div>
