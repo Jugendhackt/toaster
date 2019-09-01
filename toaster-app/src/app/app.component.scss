@@ -33,6 +33,13 @@
                 i {
                     font-size: 1.9em;
                     color: #505050;
+                    transition: color 0.25s;
+                }
+            }
+
+            .tab-bar-item.active {
+                i {
+                    color: #2e8aec;
                 }
             }
         }

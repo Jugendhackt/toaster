@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -13,11 +13,12 @@ export class AppComponent {
     { name: 'Einstellungen', icon: 'settings', path: 'settings' }
   ];
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private activeRoute: ActivatedRoute) {
 
   }
 
   navigate(path): void {
     this.router.navigateByUrl(path);
+    console.log(this.activeRoute);
   }
 }
