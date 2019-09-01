@@ -26,6 +26,9 @@ def setPWM(pin, pwm):
     #pi.set_servo_pulsewidth(pin, pwm)
     servo.move(pwm, pin)
 
+for i in range(10, 15):
+    servo.reset_servo(i)
+
 start_server = websockets.serve(main, "0.0.0.0", 12345)
 asyncio.get_event_loop().run_until_complete(start_server)
 asyncio.get_event_loop().run_forever()
